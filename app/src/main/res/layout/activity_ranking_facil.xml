@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RankingFacil"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="311dp"
+        android:layout_height="44dp"
+        android:text="Puntuaciones ordenadas por tiempo de resolución"
+        android:textAlignment="center"
+        android:textColor="#1a2a7f"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.229" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="309dp"
+        android:layout_height="27dp"
+        android:text="Ranking - Nivel Fácil"
+        android:textAlignment="center"
+        android:textColor="#1a2a7f"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <Button
+        android:id="@+id/botonResolver2"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#3b38a0"
+        android:onClick="volverMenu"
+        android:text="Volver"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="151dp"
+        android:layout_height="73dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046"
+        app:srcCompat="@drawable/logo_sudoku" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/grid"
+        android:layout_width="411dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.641" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

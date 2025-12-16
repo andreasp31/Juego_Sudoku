@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="236dp"
+        android:layout_height="132dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146"
+        app:srcCompat="@drawable/logo_sudoku" />
+
+    <Button
+        android:id="@+id/botonPuntuacion"
+        android:layout_width="198dp"
+        android:layout_height="68dp"
+        android:backgroundTint="#3b38a0"
+        android:text="PUNTUACIONES"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.659"
+        android:onClick="moverPuntuaciones"/>
+
+    <Button
+        android:id="@+id/botonPartida"
+        android:layout_width="198dp"
+        android:layout_height="68dp"
+        android:backgroundTint="#3b38a0"
+        android:text="NUEVA PARTIDA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.533"
+        android:onClick="moverNiveles"/>
+
+    <Button
+        android:id="@+id/botonSalir"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#b2b0e7"
+        android:text="Salir"
+        android:textColor="#1a2a7f"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.895"
+        android:onClick="salirApp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instrucciones de juego ->"
+        android:textColor="#b2b0e7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="311dp"
+        android:layout_height="44dp"
+        android:text="Pon a prueba tu mente, el clásico rompecabezas que desafía tu lógica y concentración"
+        android:textAlignment="center"
+        android:textColor="#1a2a7f"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
